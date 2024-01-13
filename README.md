@@ -1,0 +1,2 @@
+# PredictiveMaintenance
+Wartungen für Feuerwehrfahrzeuge frühzeitig vorhersagen
