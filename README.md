@@ -1,12 +1,25 @@
 # Predictive Maintenance
-![Fahrzeug Grafik](https://teltonika-gps.com/cdn/use-cases/2023/01/63d91a6cbc4dc4-83625632/487898-wildfire-emergency-vehicle-gps-tracker-fmc225-v12-final.svg)
-## Ziel
-- Wartungsbedarf an Fahrzeug frühzeitig erkennen
+Das Projekt "Predictive Maintenance" wurde beim [Hackathon](https://github.com/FeuerwehrHackathon2024) der [Freiwilligen Feuerwehr München](https://www.ffw-muenchen.de/) konzeptioniert und bereits vorgestellt. Die technische Umsetzung konnte leider noch nicht erfolgen aufgrund von fehlenden Hardware-Komponenten
+
+## Ziele
+- Wartungsbedarf an Fahrzeugen frühzeitig erkennen
 - Erleichterung der Wartung
 - Fuhrparkverwaltung
 
 ## Wie funktionierts?
-Durch ein Gerät was an den OBD Port des Fahrzeuges angeschlossen wird, erhält man alle Sensor Daten. Diese können dann an einen Server durch WLAN / Mobilfunk an einen Server übertragen werden. Der Server wertet die Daten aus und könnte durch eine (Web) Anwendung dargestellt werden.
+![Fahrzeug Grafik](Predictive-Maintanance.svg)
+
+Durch ein Gerät welches an den [OBD Port](https://de.wikipedia.org/wiki/On-Board-Diagnose) des jeweiligen Fahrzeuges angeschlossen wird, können Informationen vom Fahrzeug ausgelesen werden.
+Diese können dann durch das Internet an einen Server der FFM übermittelt werden und gleichzeitig ausgewertet werden. Die Ausgabe kann dann durch eine (Web-) Applikation erfolgen.
+
+## Mögliche Informationen
+- DTC
+- Aktuelle Motordrehzahl
+- Gefahrene Geschwindigkeit
+- Kraftstoffdruck
+- Kühlmitteltemperatur
+- ...
 
 ## Benötigte Ressourcen
-- OBD-Tracker: z.B. TELTONIKA FMB001
+- OBD Reader mit WLAN / GSM funktion
+- Server zum Speichern & Auswerten
